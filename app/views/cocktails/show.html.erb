@@ -1,7 +1,7 @@
-<h1> <%= @cocktail.name %> </h1>
-
-<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %> <br>
-
+<div class="img-fluid" alt="Responsive image">
+  <h1> <%= @cocktail.name %> </h1>
+  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %> <br>
+</div>
 <%= link_to 'Créer dose', new_cocktail_dose_path(@cocktail) %> <br>
 
 <%= link_to 'Retour', cocktails_path %>
